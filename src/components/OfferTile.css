@@ -1,0 +1,35 @@
+/* CSS for the OfferTile with dynamic full-color spectrum glow */
+.offer-tile {
+  position: relative;
+  z-index: 2;
+  padding: 16px;
+  border-radius: 16px;
+  width: 100%;
+  box-shadow: 0 0 15px 3px rgba(128, 90, 213, 0.2); /* Fallback for non-supportive browsers */
+  animation: fullSpectrumGlow 12s infinite alternate;
+}
+
+/* Keyframes for dynamic full-color spectrum glow */
+@keyframes fullSpectrumGlow {
+  0% {
+    box-shadow: 0 0 5px 1px rgba(0, 255, 115, 0.4); /* Red */
+  }
+  25% {
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.2); /* Orange */
+  }
+  50% {
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.15); /* Green */
+  }
+  75% {
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.2); /* Blue */
+  }
+  100% {
+    box-shadow: 0 0 5px 1px rgba(0, 255, 115, 0.4); /* Purple */
+  }
+}
+
+/* Optional: Enhance the hover effect */
+.offer-tile:hover {
+  box-shadow: 0 0 30px 10px rgba(255, 255, 255, 1);
+  transition: box-shadow 8s ease-in-out;
+}
