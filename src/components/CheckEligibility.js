@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { geolocationCheck } from "../utils/geolocationCheck";
 import { EligibleContent } from "./EligibleContent";
 import { IneligibleContent } from "./IneligibleContent";
